@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.scss';
 
+import Header from './Components/Organisms/Header';
+
 function App() {
   return (
     <div className="App">
-
+      <Header />
     </div>
   )
 }
 
-export default App
+export default App;

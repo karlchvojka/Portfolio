@@ -34,6 +34,11 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
+      {
+        test: /\.(png|jpg)$/,
+        type: "asset",
+        parser: { dataUrlCondition: { maxSize: 15000 } },
+      },
     ],
   },
 
