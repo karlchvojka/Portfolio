@@ -4,10 +4,11 @@ import styled from 'styled-components';
 // Styles
 const StyledLink = styled.a`
   color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   margin-right: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
 `;
 
 function NavLink({ href, target, text }) {
