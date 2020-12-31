@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
   background-color: #fff;
   border-bottom: 1px solid #000;
   display: flex;
+  font-family: 'Montserrat', sans-serif;
   justify-content: space-between;
   padding: 10px;
 `;
