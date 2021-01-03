@@ -7,9 +7,31 @@ import List from '../../Molecules/List';
 
 // Styles
 const StyledSkills = styled.section`
+  border-top: 1px solid #00abdf;
+
   .listWrap {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+      max-width: 25%;
+      flex: 0 0 25%;
+
+      h3 {
+        color:#00abdf;
+        font-size:22px;
+      }
+
+      li {
+        p {
+          font-weight: 700;
+          font-size: 18px;
+          line-height:1.5;
+          margin-bottom: 5px;
+        }
+      }
+    }
   }
 `;
 
@@ -22,23 +44,25 @@ function Skills() {
   ])
   return (
     <StyledSkills>
-      <Header type='h2' text='Skills' />
-      <div className="listWrap">
-        <div>
-          <Header type='h3' text="Languages" />
-          <List items={skills[0]} />
-        </div>
-        <div>
-          <Header type='h3' text="Libraries & Frameworks" />
-          <List items={skills[1]} />
-        </div>
-        <div>
-          <Header type='h3' text="Database Systems" />
-          <List items={skills[2]} />
-        </div>
-        <div>
-          <Header type='h3' text="Software & Design" />
-          <List items={skills[3]} />
+      <div className="container">
+        <Header type='h2' text='Skills' />
+        <div className="listWrap">
+          <div>
+            <Header type='h3' text="Languages" />
+            <List items={skills[0]} />
+          </div>
+          <div>
+            <Header type='h3' text="Libraries & Frameworks" />
+            <List items={skills[1]} />
+          </div>
+          <div>
+            <Header type='h3' text="Database Systems" />
+            <List items={skills[2]} />
+          </div>
+          <div>
+            <Header type='h3' text="Software & Design" />
+            <List items={skills[3]} />
+          </div>
         </div>
       </div>
     </StyledSkills>

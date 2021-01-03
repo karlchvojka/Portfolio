@@ -6,10 +6,10 @@ const StyledLogo = styled.img`
   width: auto;
 `;
 
-function Image({ source, alter }) {
+function HeaderLogo({ source, alter }) {
   return (
     <StyledLogo src={source} alt={alter} />
   )
 }
 
-export default Image;
+export default HeaderLogo;

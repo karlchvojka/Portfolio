@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import hexaLogo from '../../../Assets/Images/Navbar/hexapixel_logo.jpg';
 
 // Component imports
-import Image from '../../Atoms/Image';
+import HeaderLogo from '../../Atoms/HeaderLogo';
 import NavBar from '../../Molecules/NavBar';
 
 // Styles
@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
 function Header() {
   return (
     <StyledHeader>
-      <Image source={hexaLogo} alter="Logo" />
+      <HeaderLogo source={hexaLogo} alter="Logo" />
       <NavBar />
     </StyledHeader>
   )
