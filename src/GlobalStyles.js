@@ -47,4 +47,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Lato', sans-serif;
     font-size: 16px;
   }
+
+  // Common Styles:
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 `;
