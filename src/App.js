@@ -6,6 +6,7 @@ import { GlobalStyle } from './GlobalStyles.js';
 
 import Header from './Components/Organisms/Header';
 import About from './Components/Molecules/About';
+import Skills from './Components/Organisms/Skills';
 
 // Styles
 
@@ -15,6 +16,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <About />
+      <Skills />
     </div>
   )
 }
