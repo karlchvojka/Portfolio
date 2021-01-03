@@ -9,7 +9,7 @@ import List from '../../Molecules/List';
 const StyledSkills = styled.section`
   max-width: 1140px;
   margin: 0 auto;
-  
+
   .listWrap {
     display: flex;
     flex-direction: row;
@@ -18,6 +18,12 @@ const StyledSkills = styled.section`
     div {
       max-width: 25%;
       flex: 0 0 25%;
+
+      h3 {
+        color:#00abdf;
+        font-size:22px;
+      }
+
       li {
         p {
           font-weight: 700;
