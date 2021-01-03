@@ -7,9 +7,26 @@ import List from '../../Molecules/List';
 
 // Styles
 const StyledSkills = styled.section`
+  max-width: 1140px;
+  margin: 0 auto;
+  
   .listWrap {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+      max-width: 25%;
+      flex: 0 0 25%;
+      li {
+        p {
+          font-weight: 700;
+          font-size: 18px;
+          line-height:20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
   }
 `;
 
