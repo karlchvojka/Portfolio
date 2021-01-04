@@ -9,6 +9,7 @@ import Project from '../../Molecules/Project';
 // Styles
 const StyledProjects = styled.section`
   border-top: 1px solid #00abdf;
+  margin-bottom:30px;
 
   .projWrap {
     display: flex;

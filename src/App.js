@@ -8,6 +8,7 @@ import Header from './Components/Organisms/Header';
 import About from './Components/Molecules/About';
 import Skills from './Components/Organisms/Skills';
 import Projects from './Components/Organisms/Projects';
+import Footer from './Components/Organisms/Footer';
 
 // Styles
 
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   )
 }
