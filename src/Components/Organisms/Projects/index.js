@@ -2,15 +2,21 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import weathPic from '../../../Assets/Images/Projects/weather_app.png';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-
 // Component import
 import Header from '../../Atoms/Header';
+import Project from '../../Molecules/Project';
 
 // Styles
 const StyledProjects = styled.section`
   border-top: 1px solid #00abdf;
+
+  .projWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 `;
 
 function Projects() {
@@ -37,13 +43,6 @@ function Projects() {
       git: 'https://github.com/basktballer/TheWallMidterm/raw/master/docs/desktop-home.png'
     },
     {
-      name: 'Tiny App',
-      img: 'https://github.com/karlchvojka/lhl-tinyApp-project/raw/master/docs/tinyapp1.png',
-      desc: <p>Tiny App is a URL shortner. This project was completed while at Lighthouse Labs.</p>,
-      tech: 'JavaScript, NPM',
-      git: 'https://github.com/karlchvojka/lhl-tinyApp-project/raw/master/docs/tinyapp1.png'
-    },
-    {
       name: 'Tweeter App',
       img: 'https://github.com/karlchvojka/tweeter/raw/master/docs/screenshot1.png',
       desc: <p>Tweeter is a Twitter clone, built to practice JavaScript and MongoDB</p>,
@@ -68,16 +67,13 @@ function Projects() {
 
   const projMap = projects.map((proj) => {
     return (
-      <article className="cardWrap">
-        <div className="imgWrap">
-          <img src={proj.img} />
-        </div>
-        <h3>{proj.name}</h3>
-        {proj.desc}
-        <h4>Technology Used:</h4>
-        <p>{proj.tech}</p>
-        <p><a href={proj.git}><FontAwesomeIcon icon={faGithub}/> View project</a></p>
-      </article>
+      <Project
+        name={proj.name}
+        desc={proj.desc}
+        img={proj.img}
+        tech={proj.tech}
+        git={proj.git}
+      />
     )
   })
 
@@ -85,7 +81,9 @@ function Projects() {
     <StyledProjects>
       <div className="container">
         <Header type="h2" text="Projects" />
-        {projMap}
+        <div className="projWrap">
+          {projMap}
+        </div>
       </div>
     </StyledProjects>
   )
