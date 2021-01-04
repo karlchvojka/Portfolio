@@ -20,11 +20,6 @@ function NavBar() {
         text="Home"
       />
       <NavLink
-        href='#about'
-        target="_blank"
-        text="About"
-      />
-      <NavLink
         href='/resume'
         target="_blank"
         text="Resume"
