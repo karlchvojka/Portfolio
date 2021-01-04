@@ -5,7 +5,7 @@ import './App.scss';
 import { GlobalStyle } from './GlobalStyles.js';
 
 import Header from './Components/Organisms/Header';
-import About from './Components/Molecules/About';
+import Slider from './Components/Molecules/Slider';
 import Skills from './Components/Organisms/Skills';
 import Projects from './Components/Organisms/Projects';
 import Footer from './Components/Organisms/Footer';
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Header />
-      <About />
+      <Slider />
       <Skills />
       <Projects />
       <Footer />
