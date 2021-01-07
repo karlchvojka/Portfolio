@@ -1,5 +1,8 @@
 import React from 'react';
 import { styled, createGlobalStyle } from 'styled-components';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HttpsRedirect from 'react-https-redirect';
+
 import './App.scss';
 
 import { GlobalStyle } from './GlobalStyles.js';
@@ -14,6 +17,14 @@ import Footer from './Components/Organisms/Footer';
 
 function App() {
   return (
+    <HttpsRedirect>
+    <Router>
+      <Route path="/" exact component={ Home } />
+      <Route path="/resume" exact component={ Resume } />
+    </Router>
+    </HttpsRedirect>
+
+
     <div className="App">
       <GlobalStyle />
       <Header />
