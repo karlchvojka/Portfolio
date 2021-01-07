@@ -7,32 +7,22 @@ import './App.scss';
 
 import { GlobalStyle } from './GlobalStyles.js';
 
-import Header from './Components/Organisms/Header';
-import Slider from './Components/Molecules/Slider';
-import Skills from './Components/Organisms/Skills';
-import Projects from './Components/Organisms/Projects';
-import Footer from './Components/Organisms/Footer';
+import Home from './Components/Pages/Home';
+import Resume from './Components/Pages/Resume';
 
 // Styles
 
 function App() {
   return (
+
     <HttpsRedirect>
+    <GlobalStyle />
+
     <Router>
       <Route path="/" exact component={ Home } />
       <Route path="/resume" exact component={ Resume } />
     </Router>
     </HttpsRedirect>
-
-
-    <div className="App">
-      <GlobalStyle />
-      <Header />
-      <Slider />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
   )
 }
 
