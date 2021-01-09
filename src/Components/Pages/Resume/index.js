@@ -5,6 +5,7 @@ import hexRepeat from '../../../Assets/Images/hexrepeat2.jpg';
 // Styles
 const StyledResume = styled.div`
   background-color:#fff;
+  color: #000;
   h2 {
     font-size: 2rem;
     color: #00abdf;
