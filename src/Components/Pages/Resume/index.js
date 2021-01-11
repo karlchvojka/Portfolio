@@ -195,7 +195,7 @@ function Resume() {
       <article className="workPlace">
         <h3>{work.placementName}</h3>
         <section className="workexpHeader">
-s          <p>{work.dates}</p>
+          <p>{work.dates}</p>
         </section>
         <p className="keywords"><span>Noteable Keywords: </span>
           {work.keywords}
