@@ -83,8 +83,17 @@ const StyledResume = styled.div`
     }
   }
 
+  .profileWrap {
+    border-bottom: 1px solid #00abdf;
+    padding-bottom:10px;
+  }
   .workExpWrap {
+    h2 {
+      margin-top: 20px;
+    }
     .workPlace {
+      margin-bottom: 30px;
+
       h3 {
         color: #00abdf;
         font-family: "Roboto Condensed",sans-serif;
@@ -129,10 +138,83 @@ const StyledResume = styled.div`
       }
     }
   }
+  .skillsWrap {
+    border-top: 1px solid #00abdf;
 
+    .listWrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      div {
+        max-width: 50%;
+        flex: 0 0 50%;
+
+        h3 {
+          color:#00abdf;
+          font-size:19px;
+          margin-top: 0px;
+        }
+        ul {
+          list-style: none;
+          padding-left: 0px;
+
+          li {
+            p {
+              font-weight: 700;
+              font-size: 16px;
+              line-height:1.5;
+              margin: 0px 0px 5px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .educationWrap {
+    h3 {
+      font-family: "Roboto Condensed",sans-serif;
+      font-size: 1.5rem;
+      color: #00abdf;
+      margin: 0px 0px .5rem 0px;
+
+    }
+
+    .edHeader {
+      display:flex;
+      justify-content: space-between;
+
+      h4 {
+        font-family: "Roboto Condensed",sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        margin: 0px 0px .5rem 0px;
+      }
+      p {
+        margin: 0px;
+        font-family: "Roboto Condensed",sans-serif;
+        text-align: right;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  }
   @media print {
     .controlWrap {
       display: none;
+    }
+
+    .skillsWrap{
+      .listWrap {
+        div {
+          max-width: 25%;
+          flex: 0 0 25%;
+        }
+      }
     }
   }
 `;
@@ -232,60 +314,74 @@ function Resume() {
         <h2>Work Experience</h2>
         {workMap}
       </section>
-      <section>
+      <section className="skillsWrap">
         <h2>Skills</h2>
-
-        <h3>Languages</h3>
-        <ul>
-          <li><p>HTML5</p></li>
-          <li><p>CSS3</p></li>
-          <li><p>JavaScript</p></li>
-          <li><p>ES6</p></li>
-          <li><p>PHP</p></li>
-        </ul>
-
-        <h3>Libraries & Frameworks</h3>
-        <ul>
-          <li><p>jQuery</p></li>
-          <li><p>Bootstrap 4</p></li>
-          <li><p>Ajax</p></li>
-          <li><p>Express.js</p></li>
-          <li><p>React</p></li>
-          <li><p>Ruby on Rails</p></li>
-          <li><p>Knex</p></li>
-          <li><p>Wordpress</p></li>
-        </ul>
-
-        <h3>Database Systems</h3>
-        <ul>
-          <li><p>MySQL</p></li>
-          <li><p>PostgreSQL</p></li>
-          <li><p>MongoDB</p></li>
-          <li><p>Restful API's</p></li>
-        </ul>
-
-        <h3>Software & Design</h3>
-        <ul>
-          <li><p>Git/Github</p></li>
-          <li><p>Adobe Software Collection</p></li>
-          <li><p>Responsive Design</p></li>
-          <li><p>Web Design</p></li>
-        </ul>
+        <div className="listWrap">
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li><p>HTML5</p></li>
+              <li><p>CSS3</p></li>
+              <li><p>JavaScript</p></li>
+              <li><p>ES6</p></li>
+              <li><p>PHP</p></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Libraries & Frameworks</h3>
+            <ul>
+              <li><p>jQuery</p></li>
+              <li><p>Bootstrap 4</p></li>
+              <li><p>Ajax</p></li>
+              <li><p>Express.js</p></li>
+              <li><p>React</p></li>
+              <li><p>Ruby on Rails</p></li>
+              <li><p>Knex</p></li>
+              <li><p>Wordpress</p></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Database Systems</h3>
+            <ul>
+              <li><p>MySQL</p></li>
+              <li><p>PostgreSQL</p></li>
+              <li><p>MongoDB</p></li>
+              <li><p>Restful API's</p></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Software & Design</h3>
+            <ul>
+              <li><p>Git/Github</p></li>
+              <li><p>Adobe Software Collection</p></li>
+              <li><p>Responsive Design</p></li>
+              <li><p>Web Design</p></li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section>
+
+      <section className="educationWrap">
         <h2>Education</h2>
 
-        <h3>Lighthouse Labs, Toronto</h3>
-        <h4>Web Development Bootcamp</h4>
-        <p>Apr 2019  –  June 2019</p>
-        <p>The Web Development Bootcamp is a 12 week, 40+ hours/week bootcamp. It covers the most popular and marketable languages and frameworks used in Web Development today.</p>
-        <p>The topics covered are: JavaScript, Node.js, Express, PostgreSQL, MongoDB, React, Ruby on Rails, Automated Testing, and Computer Science Fundamentals.</p>
+        <article className="edWrap">
+          <h3>Lighthouse Labs, Toronto</h3>
+          <section className="edHeader">
+            <h4>Web Development Bootcamp</h4>
+            <p>Apr 2019  –  June 2019</p>
+          </section>
+          <p>The Web Development Bootcamp is a 12 week, 40+ hours/week bootcamp. It covers the most popular and marketable languages and frameworks used in Web Development today.</p>
+          <p>The topics covered are: JavaScript, Node.js, Express, PostgreSQL, MongoDB, React, Ruby on Rails, Automated Testing, and Computer Science Fundamentals.</p>
+        </article>
 
-        <h3>Edmonton Arts College</h3>
-        <h4>Digital Media Production Program</h4>
-        <p>June 2010</p>
-        <p className="keywords"><span>Noteable Keywords:</span> Education, Student Instruction, Front End Development (HTML5, CSS3), JavaScript, jQuery, Wordpress, Drupal, Joomla!, Design Interpretation, Career Guidence</p>
-
+        <article className="edWrap">
+          <h3>Edmonton Arts College</h3>
+          <section className="edHeader">
+            <h4>Digital Media Production Program</h4>
+            <p>June 2010</p>
+          </section>
+          <p className="keywords"><span>Noteable Keywords:</span> Education, Student Instruction, Front End Development (HTML5, CSS3), JavaScript, jQuery, Wordpress, Drupal, Joomla!, Design Interpretation, Career Guidence</p>
+        </article>
       </section>
     </StyledResume>
   )
