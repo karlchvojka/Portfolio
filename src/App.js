@@ -1,27 +1,28 @@
 import React from 'react';
 import { styled, createGlobalStyle } from 'styled-components';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HttpsRedirect from 'react-https-redirect';
+
 import './App.scss';
 
 import { GlobalStyle } from './GlobalStyles.js';
 
-import Header from './Components/Organisms/Header';
-import Slider from './Components/Molecules/Slider';
-import Skills from './Components/Organisms/Skills';
-import Projects from './Components/Organisms/Projects';
-import Footer from './Components/Organisms/Footer';
+import Home from './Components/Pages/Home';
+import Resume from './Components/Pages/Resume';
 
 // Styles
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyle />
-      <Header />
-      <Slider />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
+
+    <HttpsRedirect>
+    <GlobalStyle />
+
+    <Router>
+      <Route path="/" exact component={ Home } />
+      <Route path="/resume" exact component={ Resume } />
+    </Router>
+    </HttpsRedirect>
   )
 }
 
