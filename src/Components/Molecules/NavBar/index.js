@@ -16,12 +16,10 @@ function NavBar() {
     <StyledUl>
       <NavLink
         href='/'
-        target="_blank"
         text="Home"
       />
       <NavLink
         href='/resume'
-        target="_blank"
         text="Resume"
       />
     </StyledUl>
