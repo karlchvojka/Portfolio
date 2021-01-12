@@ -2,15 +2,15 @@ import React from 'react';
 import { styled, createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
+// Style Includes
 import { GlobalStyle } from '../../../GlobalStyles.js';
 
+// Component Includes
 import Header from '../../Organisms/Header';
 import Slider from '../../Molecules/Slider';
 import Skills from '../../Organisms/Skills';
 import Projects from '../../Organisms/Projects';
 import Footer from '../../Organisms/Footer';
-
-// Styles
 
 function Home() {
   return (

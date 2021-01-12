@@ -4,20 +4,22 @@ import hexRepeat from '../../../Assets/Images/hexrepeat2.jpg';
 
 // Styles
 const StyledResume = styled.div`
-  background-color:#fff;
+  background-color: #fff;
   color: #000;
+
   h2 {
-    font-size: 2rem;
     color: #00abdf;
-    font-family: "Roboto Condensed",sans-serif;
+    font-size: 2rem;
+    font-family: "Roboto Condensed", sans-serif;
     margin-bottom: 20px;
   }
+
   .controlWrap {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
     background-color: #000;
     color: #fff;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
 
     ul {
       display: flex;
@@ -53,21 +55,21 @@ const StyledResume = styled.div`
     h1, h2 {
       border-bottom: 1px solid #00abdf;
       display: block;
-      width: 250px;
       font-family: "Roboto Condensed",sans-serif;
+      width: 250px;
     }
 
     h1 {
       color: #00abdf;
+      font-size: 2.4rem;
       margin-bottom: 0;
       margin-top:0px;
-      font-size: 2.4rem;
     }
 
     h2 {
-      margin: 5px 0;
-      font-size: 1.3rem;
       color: #000;
+      font-size: 1.3rem;
+      margin: 5px 0;
       padding-bottom: 5px;
     }
 
@@ -100,10 +102,12 @@ const StyledResume = styled.div`
         font-size: 1.5rem;
         margin: 0px 0px .5rem 0px;
       }
+
       p {
         margin: 0px 0px 1rem 0px;
         line-height: 1.2rem;
       }
+
       .workexpHeader {
         display: flex;
         flex-direction: row;
@@ -118,10 +122,10 @@ const StyledResume = styled.div`
         }
         p {
           font-family: "Roboto Condensed",sans-serif;
-          text-align: right;
-          font-weight: 700;
-          text-transform: uppercase;
           font-size: 1.2rem;
+          font-weight: 700;
+          text-align: right;
+          text-transform: uppercase;
           margin-bottom: 0;
         }
       }
@@ -155,11 +159,13 @@ const StyledResume = styled.div`
           font-size:19px;
           margin-top: 0px;
         }
+
         ul {
           list-style: none;
           padding-left: 0px;
 
           li {
+
             p {
               font-weight: 700;
               font-size: 16px;
@@ -194,10 +200,10 @@ const StyledResume = styled.div`
       p {
         margin: 0px;
         font-family: "Roboto Condensed",sans-serif;
-        text-align: right;
-        font-weight: 700;
-        text-transform: uppercase;
         font-size: 1.2rem;
+        font-weight: 700;
+        text-align: right;
+        text-transform: uppercase;
       }
     }
   }
@@ -209,7 +215,9 @@ const StyledResume = styled.div`
     }
 
     .skillsWrap{
+
       .listWrap {
+        
         div {
           max-width: 25%;
           flex: 0 0 25%;

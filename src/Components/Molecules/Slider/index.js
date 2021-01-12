@@ -19,10 +19,11 @@ const StyledSlider = styled.section`
 
     h1 {
       color: #00abdf;
-      font-size: 25px;
       display: block;
+      font-size: 25px;
       text-shadow: 3px 3px 2px #000;
     }
+
     p {
       color:#fff;
       font-size: 14px;
@@ -34,9 +35,11 @@ const StyledSlider = styled.section`
 
     div {
       width: 50%;
+
       h1 {
         font-size: 20px;
       }
+
       p {
         font-size: 14px;
       }
@@ -47,9 +50,11 @@ const StyledSlider = styled.section`
 
     div {
       width: 50%;
+
       h1 {
         font-size: 25px;
       }
+
       p {
         font-size: 16px;
       }
@@ -60,9 +65,11 @@ const StyledSlider = styled.section`
 
     div {
       width: 50%;
+
       h1 {
         font-size: 30px;
       }
+
       p {
         font-size: 18px;
       }
@@ -73,9 +80,11 @@ const StyledSlider = styled.section`
 
     div {
       width: 50%;
+
       h1 {
         font-size: 30px;
       }
+
       p {
         font-size: 18px;
       }
@@ -86,9 +95,11 @@ const StyledSlider = styled.section`
 
     div {
       width: 50%;
+
       h1 {
         font-size: 30px;
       }
+      
       p {
         font-size: 18px;
       }

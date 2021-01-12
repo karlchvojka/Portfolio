@@ -35,9 +35,9 @@ const StyledProject = styled.article`
     margin-bottom: 20px;
 
     img {
-      width: 100%;
-      min-height: 200px;
       height: auto;
+      min-height: 200px;
+      width: 100%;
     }
   }
 
@@ -68,7 +68,12 @@ function Project({ name, img, desc, tech, git }) {
       {desc}
       <h4>Technology Used:</h4>
       <p>{tech}</p>
-      <p className="gitLink"><a href={git}><FontAwesomeIcon icon={faGithub}/> View project</a></p>
+      <p className="gitLink">
+        <a href={git}>
+          <FontAwesomeIcon icon={faGithub}/>
+          View project
+        </a>
+      </p>
     </StyledProject>
   )
 };

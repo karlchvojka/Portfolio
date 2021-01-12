@@ -7,6 +7,7 @@ const StyledList = styled.ul`
   padding-left: 0px;
 
   li {
+    
     p {
       margin: 0px 0px 5px 0px;
     }

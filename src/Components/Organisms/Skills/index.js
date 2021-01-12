@@ -27,6 +27,7 @@ const StyledSkills = styled.section`
       }
 
       li {
+
         p {
           font-weight: 700;
           font-size: 16px;
@@ -42,90 +43,101 @@ const StyledSkills = styled.section`
 
     .listWrap {
 
-    div {
-      max-width: 50%;
-      flex: 0 0 50%;
+      div {
+        flex: 0 0 50%;
+        max-width: 50%;
 
-      h3 {
-        font-size:19px;
-      }
+        h3 {
+          font-size:19px;
+        }
 
-      li {
-        p {
-          font-size: 16px;
-          line-height:1.5;
-          margin-bottom: 5px;
+        li {
+          
+          p {
+            font-size: 16px;
+            line-height:1.5;
+            margin-bottom: 5px;
+          }
         }
       }
     }
   }
-  }
+
   @media (min-width: 768px) {
     padding-bottom:20px;
 
     .listWrap {
 
-    div {
-      max-width: 25%;
-      flex: 0 0 25%;
+      div {
+        flex: 0 0 25%;
+        max-width: 25%;
 
-      h3 {
-        font-size:19px;
-      }
+        h3 {
+          font-size:19px;
+        }
 
-      li {
-        p {
-          font-size: 16px;
-          line-height:1.5;
-          margin-bottom: 5px;
+        li {
+
+          p {
+            font-size: 16px;
+            line-height:1.5;
+            margin-bottom: 5px;
+          }
         }
       }
     }
   }
+
   @media (min-width: 992px) {
     padding-bottom:20px;
 
     .listWrap {
 
-    div {
-      max-width: 25%;
-      flex: 0 0 25%;
+      div {
+        flex: 0 0 25%;
+        max-width: 25%;
 
-      h3 {
-        font-size:19px;
-      }
+        h3 {
+          font-size:19px;
+        }
 
-      li {
-        p {
-          font-size: 16px;
-          line-height:1.5;
-          margin-bottom: 5px;
+        li {
+
+          p {
+            font-size: 16px;
+            line-height:1.5;
+            margin-bottom: 5px;
+          }
         }
       }
     }
   }
+
   @media (min-width: 1200px) {
     padding-bottom:20px;
 
     .listWrap {
 
-    div {
-      max-width: 25%;
-      flex: 0 0 25%;
+      div {
+        flex: 0 0 25%;
+        max-width: 25%;
 
-      h3 {
-        font-size:22px;
-      }
+        h3 {
+          font-size:22px;
+        }
 
-      li {
-        p {
-          font-size: 18px;
-          line-height:1.5;
-          margin-bottom: 5px;
+        li {
+
+          p {
+            font-size: 18px;
+            line-height:1.5;
+            margin-bottom: 5px;
+          }
         }
       }
     }
   }
+
   @media (min-width: 1400px) {
     padding-bottom:20px;
 

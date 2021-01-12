@@ -19,70 +19,67 @@ const StyledProjects = styled.section`
     margin-left: 5%;
 
     article {
-      max-width: 90%;
       flex: 0 0 90%;
+      max-width: 90%;
     }
   }
 
-  // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) {
     .projWrap {
       margin-right: 5%;
       margin-left: 5%;
+
       article {
-        max-width: 90%;
         flex: 0 0 90%;
+        max-width: 90%;
       }
     }
   }
 
-  // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
     .projWrap {
       margin-right: 0%;
       margin-left: 0%;
+
       article {
-        max-width: 46%;
         flex: 0 0 46%;
+        max-width: 46%;
       }
     }
   }
 
-  // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
     .projWrap {
       margin-right: 0;
       margin-left: 0;
 
       article {
-        max-width: 30%;
         flex: 0 0 30%;
+        max-width: 30%;
       }
     }
   }
 
-  // X-Large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
     .projWrap {
       margin-right: 0;
       margin-left: 0;
 
       article {
-        max-width: 30%;
         flex: 0 0 30%;
+        max-width: 30%;
       }
     }
   }
 
-  // XX-Large devices (larger desktops, 1400px and up)
   @media (min-width: 1400px) {
     .projWrap {
       margin-right: 0;
       margin-left: 0;
 
       article {
-        max-width: 30%;
         flex: 0 0 30%;
+        max-width: 30%;
       }
     }
   }
@@ -137,11 +134,11 @@ function Projects() {
   const projMap = projects.map((proj) => {
     return (
       <Project
-        name={proj.name}
         desc={proj.desc}
-        img={proj.img}
-        tech={proj.tech}
         git={proj.git}
+        img={proj.img}
+        name={proj.name}
+        tech={proj.tech}
       />
     )
   })

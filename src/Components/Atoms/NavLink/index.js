@@ -18,7 +18,7 @@ function NavLink({ href, target, text }) {
       target={target}
       >
         {text}
-      </StyledLink>
+    </StyledLink>
   )
 }
 
