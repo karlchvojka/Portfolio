@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled, createGlobalStyle } from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 import { GlobalStyle } from '../../../GlobalStyles.js';
 
@@ -14,6 +15,11 @@ import Footer from '../../Organisms/Footer';
 function Home() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Karl Chvojka's Portfolio</title>
+        <meta name="description" content="The Web Development Portfolio for Karl Chvojka." />
+        <meta name="keywords" content="Karl Chvojka, Web Development, React, Ruby on Rails" />
+      </Helmet>
       <GlobalStyle />
       <Header />
       <Slider />

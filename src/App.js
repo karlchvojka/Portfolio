@@ -1,9 +1,8 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { styled, createGlobalStyle } from 'styled-components';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import HttpsRedirect from 'react-https-redirect';
-
-import './App.scss';
 
 import { GlobalStyle } from './GlobalStyles.js';
 
@@ -13,11 +12,11 @@ import Resume from './Components/Pages/Resume';
 // Styles
 
 function App() {
+  ReactGA.initialize('UA-18900659-1');
+  ReactGA.pageview(window.location.pathname);
   return (
-
     <HttpsRedirect>
     <GlobalStyle />
-
     <Router>
       <Route path="/" exact component={ Home } />
       <Route path="/resume" exact component={ Resume } />
