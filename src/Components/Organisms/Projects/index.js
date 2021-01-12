@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import weathPic from '../../../Assets/Images/Projects/weather_app.png';
+import portPic from '../../../Assets/Images/Projects/portfolio.png';
 
 // Component import
 import Header from '../../Atoms/Header';
@@ -88,6 +89,13 @@ const StyledProjects = styled.section`
 function Projects() {
   const [projects, setProjects] = useState([
     {
+      name: 'Portfolio Rebuild',
+      img: portPic,
+      desc: <p>This is a Portfolio rebuild for the site your currently on. Site was updated, code reviewed and updated.</p>,
+      tech: 'ReactJS, Styled-Components, React-Helmet',
+      git: 'https://github.com/karlchvojka/weather-app'
+    },
+    {
       name: 'Weather App',
       img: weathPic,
       desc: <p>This project was used specifically for practice passing props, and interacting with a third party API</p>,
@@ -114,13 +122,6 @@ function Projects() {
       desc: <p>Tweeter is a Twitter clone, built to practice JavaScript and MongoDB</p>,
       tech: 'JavaScript, MongoDB',
       git: 'https://github.com/karlchvojka/tweeter/raw/master/docs/screenshot1.png'
-    },
-    {
-      name: 'Chatty App',
-      img: 'https://github.com/karlchvojka/chatty_app/raw/master/docs/home2.png',
-      desc: <p>Chatty App is a simple chatroom utilizing websockets</p>,
-      tech: 'JavaScript, WebSockets, ReactJS',
-      git: 'https://github.com/karlchvojka/chatty_app/raw/master/docs/home2.png'
     },
     {
       name: 'Jungle App',
