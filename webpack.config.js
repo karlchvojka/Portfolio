@@ -1,13 +1,9 @@
+const webpack = require('webpack');
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
-
-const htmlPlugin = new HtmlWebpackPlugin({
-  template: "./src/index.html",
-  filename: "./index.html"
-});
 
 module.exports = {
   entry: "./src",
@@ -43,10 +39,23 @@ module.exports = {
   },
 
   resolve: {
+    alias: {
+      images: path.resolve(__dirname, './src/Assets/Images'),
+      atoms: path.resolve(__dirname, './src/Components/Atoms'),
+      molecules: path.resolve(__dirname, './src/Components/Molecules'),
+      organisms: path.resolve(__dirname, './src/Components/Organisms'),
+      pages: path.resolve(__dirname, './src/Components/Pages'),
+    },
     extensions: ["*", ".js", ".jsx", '.scss', '.css'],
   },
   plugins: [
-    htmlPlugin,
+    new webpack.ProvidePlugin({
+      React: 'react',
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "./index.html"
+    }),
     new MiniCssExtractPlugin({
       filename: isDevelopment ? '[name].css' : '[name].[hash].css',
       chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
