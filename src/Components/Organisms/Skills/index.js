@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 // Component import
@@ -9,14 +8,14 @@ import List from '../../Molecules/List';
 const StyledSkills = styled.section`
   border-top: 1px solid #00abdf;
 
-  h2 {
-  }
   .listWrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0px;
 
-    div {
+    li {
       max-width: 50%;
       flex: 0 0 50%;
 
@@ -43,7 +42,7 @@ const StyledSkills = styled.section`
 
     .listWrap {
 
-      div {
+      li {
         flex: 0 0 50%;
         max-width: 50%;
 
@@ -52,7 +51,7 @@ const StyledSkills = styled.section`
         }
 
         li {
-          
+
           p {
             font-size: 16px;
             line-height:1.5;
@@ -68,7 +67,7 @@ const StyledSkills = styled.section`
 
     .listWrap {
 
-      div {
+      li {
         flex: 0 0 25%;
         max-width: 25%;
 
@@ -93,7 +92,7 @@ const StyledSkills = styled.section`
 
     .listWrap {
 
-      div {
+      li {
         flex: 0 0 25%;
         max-width: 25%;
 
@@ -118,7 +117,7 @@ const StyledSkills = styled.section`
 
     .listWrap {
 
-      div {
+      li {
         flex: 0 0 25%;
         max-width: 25%;
 
@@ -143,7 +142,7 @@ const StyledSkills = styled.section`
 
     .listWrap {
 
-    div {
+    li {
       max-width: 25%;
       flex: 0 0 25%;
 
@@ -163,7 +162,7 @@ const StyledSkills = styled.section`
 `;
 
 function Skills() {
-  const [skills, setSkills] = useState([
+  const [skills, setSkills] = React.useState([
     ['HTML5', 'CSS3', 'JavaScript', 'ES6', 'PHP'],
     ['jQuery', 'Bootstrap 4', 'Ajax', 'Express.js', 'React', 'Ruby on Rails', 'Knex', 'Wordpress'],
     ['MySQL', 'PostgreSQL', 'MongoDB', "Restful API's"],
@@ -173,24 +172,24 @@ function Skills() {
     <StyledSkills>
       <div className="container">
         <Header type='h2' text='Skills' />
-        <div className="listWrap">
-          <div>
+        <ul className="listWrap">
+          <li>
             <Header type='h3' text="Languages" />
             <List items={skills[0]} />
-          </div>
-          <div>
+          </li>
+          <li>
             <Header type='h3' text="Libraries & Frameworks" />
             <List items={skills[1]} />
-          </div>
-          <div>
+          </li>
+          <li>
             <Header type='h3' text="Database Systems" />
             <List items={skills[2]} />
-          </div>
-          <div>
+          </li>
+          <li>
             <Header type='h3' text="Software & Design" />
             <List items={skills[3]} />
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </StyledSkills>
   )
