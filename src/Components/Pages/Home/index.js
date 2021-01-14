@@ -1,5 +1,3 @@
-import { styled, createGlobalStyle } from 'styled-components';
-
 // Component Includes
 import Header from 'organisms/Header';
 import Slider from 'molecules/Slider';

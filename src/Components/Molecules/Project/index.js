@@ -1,6 +1,4 @@
-import styled from 'styled-components';
-
-// Styled
+// Styles
 import StyledProject from './StyledProject.js';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
