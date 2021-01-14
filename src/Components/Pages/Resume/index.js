@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-
 // Component Includes
 import Workplace from './Workplace';
 
