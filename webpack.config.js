@@ -45,6 +45,7 @@ module.exports = {
       molecules: path.resolve(__dirname, './src/Components/Molecules'),
       organisms: path.resolve(__dirname, './src/Components/Organisms'),
       pages: path.resolve(__dirname, './src/Components/Pages'),
+      global: path.resolve(__dirname, './src/Components/global'),
     },
     extensions: ["*", ".js", ".jsx", '.scss', '.css'],
   },

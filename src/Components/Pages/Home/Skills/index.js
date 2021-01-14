@@ -1,6 +1,6 @@
 // Component import
-import Header from 'atoms/Header';
-import List from 'molecules/List';
+import Header from 'global/Header';
+import List from './List';
 
 // Styles
 import StyledSkills from './StyledSkills';

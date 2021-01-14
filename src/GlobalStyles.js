@@ -1,6 +1,6 @@
 import { styled, createGlobalStyle } from 'styled-components';
 
-import hexrep from './Assets/Images/hexrepeat2.jpg';
+import hexrep from 'images/hexrepeat2.jpg';
 
 
 export const GlobalStyle = createGlobalStyle`

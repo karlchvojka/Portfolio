@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Workplace({
   dates,
   desc,
@@ -14,7 +12,8 @@ export default function Workplace({
         <h4>{position}</h4>
         <p>{dates}</p>
       </section>
-      <p className="keywords"><span>Noteable Keywords: </span>
+      <p className="keywords">
+        <span>Noteable Keywords: </span>
         {keywords}
       </p>
       <p>{desc}</p>

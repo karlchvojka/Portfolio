@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 
 // Components imports
-import NavLink from '../../Atoms/NavLink';
+import NavLink from './NavLink';
 
 // Styles
 const StyledUl = styled.nav`
