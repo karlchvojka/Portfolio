@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 import { styled, createGlobalStyle } from 'styled-components';
-import { Helmet } from 'react-helmet';
+import Helmet from 'react-helmet';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import HttpsRedirect from 'react-https-redirect';
 
