@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Header from '../../Atoms/Header';
+import Header from 'atoms/Header';
 
 //Styles
 const StyledAbout = styled.section`

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 // Asset imports
-import hexaLogo from '../../../Assets/Images/Navbar/hexapixel_logo.jpg';
+import hexaLogo from 'images/Navbar/hexapixel_logo.jpg';
 
 // Component imports
-import HeaderLogo from '../../Atoms/HeaderLogo';
-import NavBar from '../../Molecules/NavBar';
+import HeaderLogo from 'atoms/HeaderLogo';
+import NavBar from 'molecules/NavBar';
 
 // Styles
 const StyledHeader = styled.header`

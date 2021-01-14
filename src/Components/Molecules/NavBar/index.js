@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // Components imports
-import NavLink from '../../Atoms/NavLink';
+import NavLink from 'atoms/NavLink';
 
 // Styles
 const StyledUl = styled.nav`
