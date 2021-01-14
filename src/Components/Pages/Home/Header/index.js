@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import hexaLogo from 'images/Navbar/hexapixel_logo.jpg';
 
 // Component imports
-import HeaderLogo from 'atoms/HeaderLogo';
-import NavBar from 'molecules/NavBar';
+import HeaderLogo from './HeaderLogo';
+import NavBar from './NavBar';
 
 // Styles
 const StyledHeader = styled.header`

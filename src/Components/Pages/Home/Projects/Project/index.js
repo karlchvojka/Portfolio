@@ -1,3 +1,4 @@
+import Header from 'global/Header';
 // Styles
 import StyledProject from './StyledProject.js';
 
@@ -11,9 +12,9 @@ function Project({ name, img, desc, tech, git }) {
       <div className="imgWrap">
         <img src={img} />
       </div>
-      <h3>{name}</h3>
+      <Header type='h3' text={name} />
       {desc}
-      <h4>Technology Used:</h4>
+      <Header type='h4' text={'Technology Used:'} />
       <p>{tech}</p>
       <p className="gitLink">
         <a href={git}>

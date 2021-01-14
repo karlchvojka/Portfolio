@@ -1,6 +1,6 @@
 // Component import
-import Header from 'atoms/Header';
-import Project from 'molecules/Project';
+import Header from 'global/Header';
+import Project from './Project';
 
 // Styles
 import StyledProjects from './StyledProjects.js';
