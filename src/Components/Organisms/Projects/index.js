@@ -132,24 +132,19 @@ function Projects() {
     }
   ]);
 
-  const projMap = projects.map((proj) => {
-    return (
-      <Project
-        desc={proj.desc}
-        git={proj.git}
-        img={proj.img}
-        name={proj.name}
-        tech={proj.tech}
-      />
-    )
-  })
-
   return (
     <StyledProjects>
       <div className="container">
         <Header type="h2" text="Projects" />
         <div className="projWrap">
-          {projMap}
+          {projects.map(proj => <Project
+                desc={proj.desc}
+                git={proj.git}
+                img={proj.img}
+                name={proj.name}
+                tech={proj.tech}
+              />
+          )}
         </div>
       </div>
     </StyledProjects>
