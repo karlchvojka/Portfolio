@@ -9,7 +9,7 @@ const StyledFooter = styled.footer`
   p {
     font-size:15px;
     font-weight:700;
-    margin: 0px;
+    margin: 2px;
     text-transform:uppercase;
   }
 `;
