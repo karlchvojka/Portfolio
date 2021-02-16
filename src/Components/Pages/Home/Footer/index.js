@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   padding:20px;
 
   p {
-    font-size:15px;
+    font-size:10px;
     font-weight:700;
     margin: 0px;
     text-transform:uppercase;
